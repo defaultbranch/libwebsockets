@@ -20,7 +20,12 @@ message("libsystemd libraries: ${LIBSYSTEMD_LIBRARIES}")
 
 if (LWS_WITH_EVLIB_PLUGINS)
 
-    create_evlib_plugin(evlib_sd sdevent.c ${LIBSYSTEMD_LIBRARIES})
+    create_evlib_plugin(
+            evlib_sd
+            sdevent.c
+            private-lib-event-libs-sdevent.h
+            ${LIBSYSTEMD_LIBRARIES}
+    )
 
 else()
 
