@@ -347,10 +347,6 @@ if (LWS_WITH_LIBEVENT)
 	set(LWS_WITH_LIBEVENT 1)
 endif()
 
-if (LWS_WITH_SDEVENT)
-	set(LWS_WITH_SDEVENT 1)
-endif()
-
 if (LWS_IPV6)
 	set(LWS_WITH_IPV6 1)
 endif()
